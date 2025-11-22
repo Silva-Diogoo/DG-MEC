@@ -21,7 +21,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <div className="p-2 bg-yellow-500 rounded text-slate-900"><Package size={24} /></div>
-          <span className={`font-bold text-2xl ${textClass}`}>Logistics<span className="text-yellow-500">Pro</span></span>
+          <span className={`font-bold text-2xl ${textClass}`}>DG-MEC<span className="text-yellow-500"></span></span>
         </Link>
 
         {/* Menu Desktop */}

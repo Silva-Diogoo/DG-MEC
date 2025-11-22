@@ -1,75 +1,117 @@
 import PageHeader from '@/components/PageHeader';
-import { Target, Eye, ShieldCheck } from 'lucide-react';
+import { CheckCircle2, MapPin } from 'lucide-react';
 
 export default function AboutPage() {
   return (
-    <main className="flex-col min-h-screen bg-slate-50">
+    <main className="flex-col min-h-screen bg-white">
+      
+      {/* Cabeçalho Padrão */}
       <PageHeader 
-        title="Sobre a DG-MEC" 
-        subtitle="Empresa técnica, confiável e especializada em logística complexa." 
-      /> 
-      {/* [cite: 43] */}
+        title="Nossa História" 
+        subtitle="Conheça a engenharia por trás da DG-MEC Logistics." 
+      />
 
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div>
-               <h2 className="text-3xl font-bold text-slate-900 mb-6">Quem Somos</h2>
-               <p className="text-gray-600 mb-4 leading-relaxed">
-                 A DG-MEC Logistics nasceu com foco técnico para atender setores com alta complexidade logística, como químico, farmacêutico, mineração e óleo & gás.
-               </p> 
-               {/* [cite: 21, 24, 26, 27] */}
-               <p className="text-gray-600 leading-relaxed">
-                 Atuamos como agente de cargas e integrador logístico, unindo experiência operacional, auditoria regulatória e gestão documental avançada. Nosso forte é o fluxo Espanha → Brasil.
-               </p> 
-               {/* [cite: 11, 12, 28] */}
-            </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-               <div 
-                 className="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-700"
-                 style={{ backgroundImage: "url('https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070')" }}
-               ></div>
-            </div>
-          </div>
+      {/* Container Centralizado estilo Blog (max-w-3xl) */}
+      <article className="max-w-3xl mx-auto px-6 py-16 text-slate-800">
+        
+        {/* --- INTRODUÇÃO --- */}
+        <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          Nascida para a Alta Complexidade
+        </h2>
+        
+        <p className="text-lg leading-relaxed mb-6 text-slate-600">
+          A DG-MEC Logistics não foi fundada para ser apenas mais uma transportadora. Nascemos com um propósito técnico muito claro: atender setores que exigem rigor absoluto, como as indústrias <strong>Química, Farmacêutica, Mineração e Óleo & Gás</strong>.
+        </p>
 
-          {/* Missão, Visão e Valores extraídos do PDF [cite: 13, 15, 17] */}
-          <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">Identidade Corporativa</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-             <ValueCard 
-               title="Missão" 
-               text="Garantir soluções logísticas seguras, ágeis e tecnicamente especializadas para o transporte internacional de cargas perigosas."
-               icon={<Target className="w-8 h-8 text-white" />}
-             /> 
-             {/* [cite: 14] */}
-             
-             <ValueCard 
-               title="Visão" 
-               text="Ser reconhecida como referência nacional em logística internacional de DG, destacando-se pela confiabilidade e inovação."
-               icon={<Eye className="w-8 h-8 text-white" />}
-             /> 
-             {/* [cite: 16] */}
+        <p className="text-lg leading-relaxed mb-8 text-slate-600">
+          Ao contrário de operadores generalistas, atuamos como uma extensão da engenharia dos nossos clientes. Unimos experiência operacional de chão de fábrica, auditoria regulatória e gestão documental avançada.
+        </p>
 
-             <ValueCard 
-               title="Valores" 
-               text="Segurança, Conformidade Ética, Agilidade, Transparência, Responsabilidade Ambiental e Atendimento Consultivo."
-               icon={<ShieldCheck className="w-8 h-8 text-white" />}
-             /> 
-             {/* [cite: 18] */}
-          </div>
+        {/* --- FOTO DE GRUPO INCLUSIVA --- */}
+        <figure className="my-10">
+           {/* Imagem de Equipe Diversa (Unsplash) */}
+           <img 
+             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
+             alt="Equipe multidisciplinar da DG-MEC colaborando em projeto" 
+             className="w-full h-auto rounded shadow-sm"
+           />
+           <figcaption className="text-center text-sm text-gray-500 mt-3 italic">
+             Nossa força está na união de especialistas diversos, focados na segurança da sua operação.
+           </figcaption>
+        </figure>
+
+        {/* --- O DIFERENCIAL REGIONAL --- */}
+        <h3 className="text-2xl font-bold text-slate-900 mb-4 mt-12">
+          Especialistas na Rota Espanha → Brasil
+        </h3>
+        
+        <p className="text-lg leading-relaxed mb-6 text-slate-600">
+          Possuímos uma atuação muito forte no fluxo de importação vindo da Espanha. Não se trata apenas de transportar, mas de entender a cultura e a burocracia dos dois países.
+        </p>
+        
+        <div className="bg-gray-50 p-6 border-l-4 border-yellow-500 mb-8 rounded-r">
+           <p className="font-medium text-slate-700 italic">
+             "Atuamos como agente de cargas e integrador logístico, coordenando diretamente com fornecedores europeus para garantir que a documentação chegue ao Brasil perfeita."
+           </p>
         </div>
-      </section>
+
+        {/* --- IDENTIDADE CORPORATIVA (Lista Simples) --- */}
+        <h3 className="text-2xl font-bold text-slate-900 mb-6 mt-12">
+          Identidade Corporativa
+        </h3>
+
+        <div className="space-y-8">
+           <div>
+              <h4 className="font-bold text-slate-900 uppercase text-sm tracking-wider mb-2 text-yellow-600">Nossa Missão</h4>
+              <p className="text-slate-700">
+                Garantir soluções logísticas seguras, ágeis e tecnicamente especializadas para o transporte internacional de cargas perigosas.
+              </p>
+           </div>
+
+           <div>
+              <h4 className="font-bold text-slate-900 uppercase text-sm tracking-wider mb-2 text-yellow-600">Nossa Visão</h4>
+              <p className="text-slate-700">
+                Ser reconhecida como referência nacional em logística internacional de DG, destacando-se pela confiabilidade, inovação e excelência operacional.
+              </p>
+           </div>
+
+           <div>
+              <h4 className="font-bold text-slate-900 uppercase text-sm tracking-wider mb-3 text-yellow-600">Nossos Valores</h4>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
+                 <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-slate-400"/> Segurança</li>
+                 <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-slate-400"/> Conformidade Ética</li>
+                 <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-slate-400"/> Agilidade</li>
+                 <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-slate-400"/> Transparência</li>
+                 <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-slate-400"/> Resp. Ambiental</li>
+                 <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-slate-400"/> Atendimento Consultivo</li>
+              </ul>
+           </div>
+        </div>
+
+        {/* --- ESTRUTURA E COMPLIANCE --- */}
+        <hr className="my-12 border-gray-200" />
+
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">
+          Segurança e Compliance (OEA)
+        </h3>
+        
+        <p className="text-lg leading-relaxed mb-6 text-slate-600">
+           Nosso compromisso com a segurança vai além do transporte. Adotamos rigorosas políticas de Compliance e seguimos as diretrizes do programa <strong>OEA (Authorized Economic Operator)</strong>.
+        </p>
+
+        <p className="text-lg leading-relaxed mb-6 text-slate-600">
+           Nossa estrutura organizacional é desenhada para suportar essa complexidade, com departamentos dedicados para cada etapa:
+        </p>
+
+        <ul className="space-y-2 text-slate-700 bg-slate-50 p-6 rounded">
+           <li className="flex items-center gap-3"><MapPin size={16} className="text-yellow-500"/> Diretoria Executiva</li>
+           <li className="flex items-center gap-3"><MapPin size={16} className="text-yellow-500"/> Compliance & Segurança DG</li>
+           <li className="flex items-center gap-3"><MapPin size={16} className="text-yellow-500"/> Operações Internacionais (Marítimo e Aéreo)</li>
+           <li className="flex items-center gap-3"><MapPin size={16} className="text-yellow-500"/> Desembaraço Aduaneiro</li>
+           <li className="flex items-center gap-3"><MapPin size={16} className="text-yellow-500"/> Armazenagem & Handling DG</li>
+        </ul>
+
+      </article>
     </main>
   );
-}
-
-function ValueCard({ title, text, icon }: { title: string, text: string, icon: React.ReactNode }) {
-  return (
-    <div className="bg-white p-8 rounded border-t-4 border-yellow-500 shadow-sm hover:shadow-lg transition-shadow h-full">
-       <div className="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center mb-6 shadow-lg">
-          {icon}
-       </div>
-       <h3 className="text-xl font-bold text-slate-900 mb-3">{title}</h3>
-       <p className="text-gray-600 text-sm">{text}</p>
-    </div>
-  )
 }
