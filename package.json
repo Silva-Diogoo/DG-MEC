@@ -1,0 +1,37 @@
+{
+  "name": "logistics-app",
+  "version": "1.0.0",
+  "description": "A logistics web application for tracking shipments and providing freight quotes.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "logistics",
+    "shipping",
+    "tracking",
+    "freight"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^0.554.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^14.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.0"
+  }
+}
