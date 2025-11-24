@@ -35,7 +35,7 @@ export default async function TrackingPage({ params }: Props) {
   const ModalIcon = data.modal === 'AÉREO' ? Plane : data.modal === 'MARÍTIMO' ? Anchor : Truck;
 
   return (
-    <main className="min-h-screen bg-slate-50 py-12 px-4">
+    <main className="min-h-screen bg-slate-50 pt-32 pb-12 px-4">
       <div className="max-w-4xl mx-auto">
         
         {/* Botão Voltar */}
